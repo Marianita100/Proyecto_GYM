@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Confirmación de Pago</title>
+<link rel="stylesheet" href="../../css/cssAndres/pago.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <h2>Confirma tu pago</h2>
+    <p class="texto">¿Deseas realizar tu pago?</p>
+
+    <div class="columnas">
+        <div class="resumen">
+            <h3>Resumen del pago</h3>
+            <p><strong>Plan:</strong> Mensual</p>
+            <p><strong>Precio:</strong> $500 MXN</p>
+            <p><strong>Fecha:</strong> 26/02/2026</p>
+        </div>
+
+        <div class="formulario">
+            <h3>Datos del cliente</h3>
+
+            <label>Nombre completo</label>
+            <input type="text" required>
+
+            <label>Correo electrónico</label>
+            <input type="email" required>
+
+        </div>
+    </div>
+
+    <div class="botones">
+        <button class="cancelar" onclick="cancelarPago()">Cancelar</button>
+        <button class="pagar" onclick="pagar()">Pagar ahora</button>
+    </div>
+
+    <div class="mensaje" id="mensajeSeguridad">
+        Pago 100% seguro
+    </div>
+</div>
+
+<script>
+function cancelarPago(){
+    window.location.href = "pago.html"; // Cambia por tu interfaz de pago en línea
+}
+
+function pagar(){
+    document.getElementById("mensajeSeguridad").style.display = "block";
+}
+</script>
+
+</body>
+</html>

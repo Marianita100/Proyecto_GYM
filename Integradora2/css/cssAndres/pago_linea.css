@@ -1,0 +1,115 @@
+/* ===== ESTILO GLOBAL ===== */
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* ===== CONTENEDOR PRINCIPAL (MISMO TAMAÑO QUE CONFIRMACIÓN) ===== */
+.contenedor{
+    width:600px;                 /* Más compacto */
+    background:#0a0a0a;
+    border:2px solid #ff0000;
+    border-radius:18px;
+    padding:28px;                /* Menos padding */
+    box-shadow:0 0 20px #ff0000; /* Glow más sutil */
+}
+
+/* ===== TITULOS ===== */
+h1, h2{
+    text-align:center;
+    color:#ffffff;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    font-size:22px;              /* Más proporcionado */
+}
+
+/* ===== TARJETAS INTERNAS ===== */
+.card-neon{
+    background:#000;
+    border:1px solid #ffffff;
+    border-radius:14px;
+    padding:18px;                /* Más compacto */
+    margin-bottom:18px;
+}
+
+/* ===== TEXTO ===== */
+label, p{
+    color:#ffffff;
+    font-size:14px;
+}
+
+strong{
+    color:#ffffff;
+}
+
+/* ===== INPUTS ===== */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"]{
+    width:100%;
+    padding:9px;                 /* Más pequeño */
+    margin-top:6px;
+    margin-bottom:12px;
+    background:#111;
+    border:1px solid #ff0000;
+    border-radius:8px;
+    color:#ffffff;
+    outline:none;
+    font-size:13px;
+}
+
+input:focus{
+    box-shadow:0 0 8px #ff0000;
+}
+
+/* ===== RADIO BUTTONS ===== */
+input[type="radio"]{
+    accent-color:#ff0000;
+    margin-right:6px;
+}
+
+/* ===== BOTONES ===== */
+.botones{
+    text-align:center;
+    margin-top:15px;
+}
+
+button{
+    padding:9px 20px;            /* Más compacto */
+    margin:8px;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:13px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* CANCELAR */
+.btn-secundario{
+    background:#2b2b2b;
+    color:white;
+    border:1px solid #ff0000;
+}
+
+.btn-secundario:hover{
+    box-shadow:0 0 12px #ff0000;
+}
+
+/* PRINCIPAL ROJO NEON */
+.btn-neon{
+    background:linear-gradient(45deg,#ff0000,#ff3c3c);
+    color:white;
+    box-shadow:0 0 15px #ff0000;
+}
+
+.btn-neon:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px #ff0000;
+}

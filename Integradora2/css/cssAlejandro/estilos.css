@@ -1,0 +1,214 @@
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.contenedor-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que se acomode en pantallas chicas */
+}
+
+/* Estilo de las Frases Laterales */
+.frase-lateral {
+    color: rgba(255, 0, 0, 0.3);
+    font-size: 50px;
+    font-weight: 900;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    user-select: none;
+}
+
+/* Tarjeta de Estadísticas Central */
+.stats-centro {
+    background: #111111;
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    text-align: center;
+}
+
+.stats-centro h3 {
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.stat-item {
+    margin-bottom: 20px;
+}
+
+.stat-item span {
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.barra {
+    background: #222;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progreso {
+    background: linear-gradient(90deg, #990000, #ff0000);
+    height: 100%;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.info-adicional p {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Tarjeta de Perfil Principal */
+.tarjeta {
+    background: #111111;
+    width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff0000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.foto-contenedor {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px #ff0000;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.foto-contenedor img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.info-grupo {
+    text-align: left;
+    margin-bottom: 15px;
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.info-grupo label {
+    color: #ff0000;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+
+.info-grupo span {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.seccion-enlaces {
+    margin-top: 20px;
+    background: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.seccion-enlaces a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #222;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.seccion-enlaces a:hover {
+    background: #ff0000;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-regresar {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: 0.4s;
+}
+
+.btn-regresar:hover {
+    background: #fff;
+    color: #ff0000;
+    box-shadow: 0 0 20px #fff;
+}
+
+
+
+/* Contenedor para alinear a la izquierda */
+.enlace-volver {
+    display: block;
+    text-align: left; /* Lo mueve a la izquierda */
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* El nuevo estilo del botón */
+.btn-regresar-pequeno {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el mouse */
+.btn-regresar-pequeno:hover {
+    background-color: #ff0000;
+    color: white;
+}

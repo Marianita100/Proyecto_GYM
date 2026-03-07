@@ -1,0 +1,148 @@
+/* --- ESTILOS GENERALES (Identidad Healthy Heart Gym) --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000; /* Fondo negro total */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px; /* Un poco más ancho para el grid de contacto */
+    background: #111111; /* Tarjeta gris casi negra */
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #ff0000; /* Borde rojo característico */
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5); /* Efecto neón */
+    text-align: center;
+}
+
+h1 {
+    color: #ff0000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* --- GRID DE CONTACTO (Específico Interfaz 17) --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas: Formulario e Info */
+    gap: 40px;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* --- INPUTS, SELECTS Y TEXTAREA --- */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #222222;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+textarea {
+    resize: none; /* Evita que el usuario deforme la interfaz */
+}
+
+/* --- SECCIÓN DE INFORMACIÓN (Derecha) --- */
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item p {
+    margin: 5px 0;
+    color: #dddddd;
+    font-size: 1.1rem;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #1a1a1a;
+    border: 1px dashed #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #888;
+}
+
+/* --- BOTONES --- */
+.footer-buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-send {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn-send:hover {
+    background-color: #b30000;
+    transform: translateY(-2px);
+}
+
+.btn-back {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #444444;
+}
+
+.btn-back:hover {
+    background-color: #444444;
+    border-color: #ff0000;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 700px) {
+    .contact-grid {
+        grid-template-columns: 1fr; /* Se apila en celulares */
+    }
+}
