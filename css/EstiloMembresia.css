@@ -1,0 +1,163 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
+* { 
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+
+/* =========================================
+   BOTÓN REGRESAR AL INICIO
+   ========================================= */
+/* =========================================
+   BOTÓN REGRESAR AL INICIO (CORREGIDO)
+   ========================================= */
+.btn-nav {
+    /* Posicionamiento */
+    position: relative;    /* Cambiado de absolute a relative para que no flote sobre otros elementos si no quieres */
+    display: block;       /* Permite usar margin: auto */
+    margin: 30px auto;    /* Lo centra y le da espacio arriba/abajo */
+    
+    /* El truco del ancho */
+    width: fit-content;   /* ¡ESTO ES LO MÁS IMPORTANTE! Se encoge al tamaño del texto */
+    min-width: 150px;     /* Opcional: para que no se vea demasiado pequeño */
+    
+    /* Estética */
+    background: transparent;
+    border: 1px solid #ff2a2a;
+    color: #ff2a2a;
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-nav:hover {
+    background: #ff2a2a;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 42, 42, 0.6);
+}
+
+/* =========================================
+   TÍTULO PRINCIPAL
+   ========================================= */
+.titulos {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff2a2a;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+/* =========================================
+   CONTENEDOR DE MEMBRESÍAS (MÁS ESTRECHO)
+   ========================================= */
+.todo {
+    width: 95%;
+    max-width: 800px; /* Reducido de 1000px a 800px */
+    padding: 30px;
+    border: 1px solid rgba(255, 42, 42, 0.2);
+    display: flex;
+    gap: 30px; /* Reducido para compactar */
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 48%; /* Ajustado para aprovechar el espacio interno */
+}
+
+.container {
+    width: 100%;
+    border: 2px solid #ff2a2a;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    background: rgba(15, 15, 15, 0.9);
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 42, 42, 0.4);
+}
+
+.container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ff2a2a;
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.info {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #ccc;
+    text-align: left;
+    border-bottom: 1px solid #222;
+    padding-bottom: 4px;
+}
+
+/* =========================================
+   BOTONES DE ADQUISICIÓN
+   ========================================= */
+.btn {
+    background: transparent;
+    border: 2px solid #ff2a2a;
+    color: #ff2a2a;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 90%;
+}
+
+.btn:hover {
+    background: #ff2a2a;
+    color: #000;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 700px) {
+    .todo {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .columnas {
+        width: 100%;
+    }
+    .btn-nav {
+        top: 15px;
+        right: 15px;
+    }
+}

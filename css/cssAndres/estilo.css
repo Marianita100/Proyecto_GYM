@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    margin: 0;
+}
+
+/* Barra superior */
+.barra {
+  background: linear-gradient(180deg, #0b0b0b, #050505);
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+  width: 100%;
+  max-width: 900px;      
+  margin: 16px auto 12px; 
+  padding: 30px 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 0, 0, 0.65);
+  box-shadow:0 0 0 1px rgba(255, 0, 0, 0.6),
+    0 0 30px rgba(255, 0, 0, 0.25);
+  position: relative; 
+  top: auto;
+  z-index: 1;
+}
+
+
+
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* mejor que center */
+    min-height: 100vh;
+    padding-top: 8px; /* baja el panel */
+}
+
+/* Panel central */
+.panel {
+    background-color: #111111;
+    border: 2px solid #E60023;
+    border-radius: 10px;
+    padding: 50px 30px;
+    width: 700px;
+    box-shadow: 0 0 15px #E6002355;
+}
+
+/* Títulos */
+.titulo-form {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Campo */
+.campo {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Contenedor del input con ojito */
+.password-campo {
+    position: relative;
+    width: 100%;
+}
+
+/* Input */
+.password-campo input {
+    width: 100%;
+    height: 50px;
+    padding: 0 50px 0 15px; /* espacio para el ojo */
+    border: 1px solid #E60023;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+}
+
+/* Efecto al escribir */
+.password-campo input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(230, 0, 35, 0.5);
+}
+
+/* Ojito */
+.password-campo .ojo {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+       color: #ffffff;
+    font-size: 18px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.btn {
+    width: 120px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.salir {
+    background-color: #444;
+    color: white;
+}
+
+.cambiar {
+    background-color: #E60023;
+    color: white;
+}
+
+.cambiar:hover {
+    background-color: #ff2a2a;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+/* Logo */
+.logo-top {
+  position: fixed;
+  top: 16px;        /* ⬅️ súbelo para que quede a la altura de la barra */
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #0b0b0b;
+  padding: 4px;
+  box-shadow: 
+    0 0 0 1px rgba(255,0,0,.7), 
+    0 0 20px rgba(255,0,0,.35);
+}
+
+/* Ancho unificado para header y formulario */
+:root {
+  --ancho-card: 500px;   /* ajústalo a tu gusto: 820px, 860px, 900px */
+}
+
+/* Header (barra) */
+.barra {
+  background: linear-gradient(180deg, #0b0b0b, #050505);
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  width: 100%;
+  max-width: var(--ancho-card);   /* ⬅️ MISMO ancho */
+  margin: 16px auto 12px;         /* centrada */
+  padding: 20px 24px;
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 0, 0, 0.65);
+  box-shadow:
+    0 0 0 1px rgba(255, 0, 0, 0.6),
+    0 0 30px rgba(255, 0, 0, 0.25);
+
+  position: relative;
+}
+
+/* Panel del formulario */
+.panel {
+  background-color: #111111;
+  border: 2px solid #E60023;
+  border-radius: 16px;
+  padding: 50px 30px;
+
+  width: 100%;
+  max-width: var(--ancho-card);   /* ⬅️ MISMO ancho */
+  box-shadow: 0 0 15px #E6002355;
+}
+
