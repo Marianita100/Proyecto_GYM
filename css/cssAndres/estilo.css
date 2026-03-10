@@ -158,20 +158,7 @@ body {
     0 0 0 1px rgba(255,0,0,.7), 
     0 0 20px rgba(255,0,0,.35);
 }
-.logo{
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-  border-radius: 50%;
-  background: #0b0b0b;
-  padding: 4px;
-  box-shadow: 
-    0 0 0 1px rgba(255,0,0,.7), 
-    0 0 20px rgba(255,0,0,.35);
-}
+
 .subbar{
   position: relative;
 }
