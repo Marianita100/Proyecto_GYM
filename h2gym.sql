@@ -91,9 +91,15 @@ INSERT INTO `pagos` (`id_pago`, `id_usuario`, `id_membresia`, `fecha_pago`, `est
 -- Disparadores `pagos`
 --
 DELIMITER $$
+<<<<<<< HEAD
 CREATE TRIGGER `before_insert_pagos` BEFORE INSERT ON `pagos` FOR EACH ROW BEGIN
     SET NEW.fecha_inicio = CURDATE();
     SET NEW.fecha_vencimiento = DATE_ADD(CURDATE(), INTERVAL 1 MONTH);
+=======
+CREATE TRIGGER `before_insert_pagos` BEFORE INSERT ON `pagos` FOR EACH ROW BEGIN
+    SET NEW.fecha_inicio = CURDATE();
+    SET NEW.fecha_vencimiento = DATE_ADD(CURDATE(), INTERVAL 1 MONTH);
+>>>>>>> e25a564de87f4faa842037afe7973e7fedb628ac
 END
 $$
 DELIMITER ;
